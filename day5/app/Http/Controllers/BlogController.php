@@ -11,7 +11,7 @@ class BlogController extends Controller
      */
     public function index()
     {
-        return "Hello Laravel!!!";
+        return view('blog.index');
     }
 
     /**
@@ -19,7 +19,7 @@ class BlogController extends Controller
      */
     public function create()
     {
-        //
+        return view('blog.create');
     }
 
     /**
@@ -27,7 +27,7 @@ class BlogController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return $request['title'];
     }
 
     /**
